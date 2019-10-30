@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:text="Nama Barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/jT_nama" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.562" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/backToHome1"/>
+    <TextView
+            android:text="Merk Barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/jT_nama"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/jT_merk"
+            android:layout_marginEnd="8dp" android:layout_marginTop="20dp"/>
+    <TextView
+            android:text="Qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintEnd_toStartOf="@+id/jT_Qty" android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/jT_merk" android:layout_marginTop="20dp"/>
+    <TextView
+            android:text="Harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/jT_Qty" app:layout_constraintEnd_toStartOf="@+id/jTHarga"
+            android:layout_marginEnd="8dp" android:layout_marginTop="20dp"
+            app:layout_constraintHorizontal_bias="0.25"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Nama Barang"
+            android:ems="10"
+            android:id="@+id/jT_nama"
+            android:layout_marginEnd="48dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/backToHome1"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Merk Barang"
+            android:ems="10"
+            android:id="@+id/jT_merk" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/jT_nama" android:layout_marginEnd="48dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Qty"
+            android:ems="10"
+            android:id="@+id/jT_Qty" android:layout_marginEnd="48dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/jT_merk"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Harga"
+            android:ems="10"
+            android:id="@+id/jTHarga" android:layout_marginEnd="48dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/jT_Qty"/>
+    <Button
+            android:text="Lanjut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_Next" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/jTHarga" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="48dp"/>
+    <ImageView
+            android:layout_width="38dp"
+            android:layout_height="35dp" app:srcCompat="?attr/homeAsUpIndicator"
+            android:id="@+id/backToHome1"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
