@@ -1,4 +1,4 @@
-package com.example.pertemuan7
+package com.example.proyekuts
 
 import android.content.Intent
 import android.os.Bundle
@@ -28,6 +28,11 @@ class Result : AppCompatActivity(){
         backToHome2.setOnClickListener{
             val backtoHome = Intent (this, MainActivity::class.java)
             startActivity(backtoHome)
+            finish()
+        }
+        bt_repeat.setOnClickListener(){
+            val backtoInput = Intent(this, AddBarang::class.java)
+            startActivity(backtoInput)
             finish()
         }
     }

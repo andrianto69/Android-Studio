@@ -1,4 +1,4 @@
-package com.example.pertemuan7
+package com.example.proyekuts
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
         bt_add.setOnClickListener() {
             val showDetailActivityIntent = Intent(this, AddBarang::class.java)
             startActivity(showDetailActivityIntent)
+        }
+        bt_exit.setOnClickListener() {
+            System.exit(1)
         }
     }
 }

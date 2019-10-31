@@ -1,4 +1,4 @@
-package com.example.pertemuan7
+package com.example.proyekuts
 
 import org.junit.Test
 
