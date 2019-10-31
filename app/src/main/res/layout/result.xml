@@ -7,10 +7,11 @@
 
     <TextView
         android:id="@+id/textView5"
+        style="@style/allText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="Nama Barang"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,6 +21,7 @@
 
     <TextView
         android:id="@+id/textView6"
+        style="@style/allText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -33,6 +35,7 @@
 
     <TextView
         android:id="@+id/textView7"
+        style="@style/allText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -45,6 +48,7 @@
 
     <TextView
         android:id="@+id/textView8"
+        style="@style/allText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -60,49 +64,44 @@
         android:id="@+id/tx_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backToHome2" />
+        app:layout_constraintTop_toBottomOf="@+id/backToHome2"
+        tools:text="Mi ayam" />
 
     <TextView
         android:id="@+id/tx_merk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tx_nama" />
+        app:layout_constraintTop_toBottomOf="@+id/tx_nama"
+        tools:text="Pak Bambang" />
 
     <TextView
         android:id="@+id/tx_Qty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tx_merk" />
+        app:layout_constraintTop_toBottomOf="@+id/tx_merk"
+        tools:text="30" />
 
     <TextView
         android:id="@+id/tx_harga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tx_Qty" />
+        app:layout_constraintTop_toBottomOf="@+id/tx_Qty"
+        tools:text="30000000" />
 
     <ImageView
         android:id="@+id/backToHome2"
@@ -112,15 +111,22 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator" />
+        app:srcCompat="@drawable/ic_house" />
 
     <Button
         android:id="@+id/bt_repeat"
-        android:layout_width="wrap_content"
+        style="@style/clickable"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_tambah_barang"
+        android:drawableStart="@drawable/ic_file"
+        android:drawablePadding="16dp"
         android:text="Input lagi"
+        android:textAllCaps="false"
+        android:textColor="#4CAF50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tx_harga" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

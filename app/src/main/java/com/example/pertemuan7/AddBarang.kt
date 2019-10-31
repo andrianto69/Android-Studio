@@ -22,6 +22,7 @@ class AddBarang : AppCompatActivity() {
         backToHome1.setOnClickListener{
         val backtoHome = Intent (this, MainActivity::class.java)
             startActivity(backtoHome)
+            finish()
         }
     }
 }

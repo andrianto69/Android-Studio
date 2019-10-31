@@ -28,6 +28,7 @@ class Result : AppCompatActivity(){
         backToHome2.setOnClickListener{
             val backtoHome = Intent (this, MainActivity::class.java)
             startActivity(backtoHome)
+            finish()
         }
     }
 }
